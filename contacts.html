@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regős Vendéglő - Kapcsolat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-900 tracking-wide">Regős Vendéglő</a>
+            <nav class="hidden md:flex space-x-2 text-sm font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Kezdőlap</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Rólunk</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Galéria</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Asztalfoglalás</a>
+                <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Kapcsolat</a>
+            </nav>
+            <button class="md:hidden text-gray-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-2">
+        <a href="index.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Kezdőlap</a>
+        <a href="about.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Rólunk</a>
+        <a href="services.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Menü</a>
+        <a href="gallery.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Galéria</a>
+        <a href="booking.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Asztalfoglalás</a>
+        <a href="contacts.html" class="block bg-amber-500 text-white rounded-lg px-4 py-2">Kapcsolat</a>
+    </div>
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-600">
+            <a href="index.html" class="hover:underline">Kezdőlap</a> > <span>Kapcsolat</span>
+        </div>
+    </div>
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-red-900 mb-4">Kapcsolat</h1>
+            <p class="text-gray-600">Várjuk önöket szeretettel Budapest szívében.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-2xl shadow-lg space-y-6">
+                <h2 class="text-2xl font-bold text-red-900 mb-4">Elérhetőségeink</h2>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Cím</h3>
+                    <p class="text-gray-600">Szófia u. 33, 1068 Budapest, Hungary</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Telefonszám</h3>
+                    <p class="text-gray-600">+36 1 322 6480</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">E-mail</h3>
+                    <p class="text-gray-600">info@regosvendeglo.hu</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Nyitvatartás</h3>
+                    <p class="text-gray-600">Hétfő - Vasárnap: 12:00–15:00, 18:00–22:00</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-[400px]">
+                <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.395029415655!2d19.072214!3d47.5055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d63b2d187%3A0x400c4290c1e1b50!2sBudapest%2C%20Sz%C3%B3fia%20u.%2033%2C%201068%20Hungary!5e0!3m2!1shu!2shu!4v1650000000000!5m2!1shu!2shu" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Regős Vendéglő</h3>
+                <p class="text-sm text-gray-400">Tradicionális magyar ízek Budapest szívében 2002 óta.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Elérhetőség</h3>
+                <p class="text-sm text-gray-400 mb-2">Szófia u. 33, 1068 Budapest, Hungary</p>
+                <p class="text-sm text-gray-400 mb-2">+36 1 322 6480</p>
+                <p class="text-sm text-gray-400">info@regosvendeglo.hu</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Nyitvatartás</h3>
+                <p class="text-sm text-gray-400 mb-2">Hétfő - Vasárnap:</p>
+                <p class="text-sm text-gray-400">12:00–15:00, 18:00–22:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
