@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regős Vendéglő - Kezdőlap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-900 tracking-wide">Regős Vendéglő</a>
+            <nav class="hidden md:flex space-x-2 text-sm font-medium">
+                <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Kezdőlap</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Rólunk</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Galéria</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Asztalfoglalás</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Kapcsolat</a>
+            </nav>
+            <button class="md:hidden text-gray-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-2">
+        <a href="index.html" class="block bg-amber-500 text-white rounded-lg px-4 py-2">Kezdőlap</a>
+        <a href="about.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Rólunk</a>
+        <a href="services.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Menü</a>
+        <a href="gallery.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Galéria</a>
+        <a href="booking.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Asztalfoglalás</a>
+        <a href="contacts.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Kapcsolat</a>
+    </div>
+    <main>
+        <section class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80')">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 text-center text-white max-w-4xl px-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Regős Vendéglő</h1>
+                <p class="text-xl md:text-2xl mb-8 text-stone-200">Tradicionális magyar ízek Budapest szívében, családias pincehangulatban.</p>
+                <a href="booking.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition">Asztalfoglalás</a>
+            </div>
+        </section>
+        <section class="py-20 px-6 max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-red-900 mb-4">Kiemelt Ételeink</h2>
+                <p class="text-gray-600">Kóstolja meg a vendégkedvenc hagyományos fogásainkat.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1545754805-b74d84fde462?auto=format&fit=crop&w=600&q=80" alt="Gulyásleves" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Levesek</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">Gulyásleves</h3>
+                        <p class="text-gray-600 text-sm mb-4">Hagyományos magyar gulyásleves gazdagon.</p>
+                        <div class="text-lg font-bold text-red-900">900 Ft</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1514944298352-fff69686c6c2?auto=format&fit=crop&w=600&q=80" alt="Jókai bableves" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Levesek</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">Jókai bableves</h3>
+                        <p class="text-gray-600 text-sm mb-4">Füstölt hússal és tejföllel gazdagított bableves.</p>
+                        <div class="text-lg font-bold text-red-900">800 Ft</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=600&q=80" alt="Paprikás csirke galuskával" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Főételek</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">Paprikás csirke galuskával</h3>
+                        <p class="text-gray-600 text-sm mb-4">Klasszikus magyar csirke paprikaes mártásban, házi galuskával.</p>
+                        <div class="text-lg font-bold text-red-900">2,200 Ft</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-block border-2 border-red-900 text-red-900 hover:bg-red-900 hover:text-white px-8 py-3 rounded-xl font-semibold transition">Teljes étlap megtekintése</a>
+            </div>
+        </section>
+        <section class="bg-stone-100 py-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-red-900 mb-4">Vendégeink mondták</h2>
+                    <p class="text-gray-600">Valódi visszajelzések a Google Maps-ről</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-500 flex space-x-1">★★★★★</div>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">"A hidden gem located in Budapest, offering traditional Hungarian cuisine at affordable prices. The restaurant is situated in a unique basement setting with traditional design elements, creating a cozy and authentic atmosphere."</p>
+                        <div class="font-semibold text-sm text-gray-900">- Google User</div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-500 flex space-x-1">★★★★★</div>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">"Great value for money set lunch options and traditional Hungarian dishes. The goulash soup was amazing!"</p>
+                        <div class="font-semibold text-sm text-gray-900">- Google User</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Regős Vendéglő</h3>
+                <p class="text-sm text-gray-400">Tradicionális magyar ízek Budapest szívében 2002 óta.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Elérhetőség</h3>
+                <p class="text-sm text-gray-400 mb-2">Szófia u. 33, 1068 Budapest, Hungary</p>
+                <p class="text-sm text-gray-400 mb-2">+36 1 322 6480</p>
+                <p class="text-sm text-gray-400">info@regosvendeglo.hu</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Nyitvatartás</h3>
+                <p class="text-sm text-gray-400 mb-2">Hétfő - Vasárnap:</p>
+                <p class="text-sm text-gray-400">12:00–15:00, 18:00–22:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
