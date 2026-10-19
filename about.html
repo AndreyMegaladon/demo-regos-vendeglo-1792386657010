@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regős Vendéglő - Rólunk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-900 tracking-wide">Regős Vendéglő</a>
+            <nav class="hidden md:flex space-x-2 text-sm font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Kezdőlap</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Rólunk</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Galéria</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Asztalfoglalás</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 transition">Kapcsolat</a>
+            </nav>
+            <button class="md:hidden text-gray-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-2">
+        <a href="index.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Kezdőlap</a>
+        <a href="about.html" class="block bg-amber-500 text-white rounded-lg px-4 py-2">Rólunk</a>
+        <a href="services.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Menü</a>
+        <a href="gallery.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Galéria</a>
+        <a href="booking.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Asztalfoglalás</a>
+        <a href="contacts.html" class="block hover:bg-amber-50 rounded-lg px-4 py-2">Kapcsolat</a>
+    </div>
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-600">
+            <a href="index.html" class="hover:underline">Kezdőlap</a> > <span>Rólunk</span>
+        </div>
+    </div>
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h1 class="text-4xl font-bold text-red-900 mb-6">Rólunk</h1>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>A Regős Vendéglő Budapest VI. kerületében, a Szófia utcában várja a hagyományos magyar konyha kedvelőit 2002 óta. Az Andrássy úthoz közel eső, boltíves pincehelyiség a 70-es és 80-as évek retro hangulatát idézi, otthonos és közvetlen atmoszférát teremtve a vendégek számára. Étlapunkon a klasszikus hazai ízek dominálnak: a gazdag gulyásleves, a halászlé, a paprikás csirke galuskával, valamint házias készételek és bőséges napi menük szerepelnek.</p>
+                    <p>Célunk, hogy a házias ízeket megfizethető áron, bőséges adagokban kínáljuk mind a helyiek, mind a várost felfedező utazók számára. Látogatóink nálunk megtalálják a valódi magyar vendégszeretetet, a figyelmes kiszolgálást és a nagymama konyháját idéző recepteket.</p>
+                    <p>Várjuk önöket szeretettel minden nap ebédre és vacsorára, klimatizált termekkel és folyamatosan megújuló, kedvező árú menüválasztékkal a belváros csendesebb sarkában.</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Regős Vendéglő belső tér" class="rounded-2xl shadow-xl w-full h-[450px] object-cover">
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h2 class="text-2xl font-bold text-red-900 mb-6">Érdekességek rólunk</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <li class="bg-amber-50 p-6 rounded-xl border border-amber-100">
+                    <div class="text-amber-600 font-bold text-lg mb-2">01</div>
+                    <p class="text-gray-700">A vendéglő 2002 óta működik Budapest VI. kerületében.</p>
+                </li>
+                <li class="bg-amber-50 p-6 rounded-xl border border-amber-100">
+                    <div class="text-amber-600 font-bold text-lg mb-2">02</div>
+                    <p class="text-gray-700">Autentikus, boltíves pincehelyiség 70-es/80-as évekbeli retro stílusban.</p>
+                </li>
+                <li class="bg-amber-50 p-6 rounded-xl border border-amber-100">
+                    <div class="text-amber-600 font-bold text-lg mb-2">03</div>
+                    <p class="text-gray-700">Hétvégén is elérhető kedvező árú, többfogásos napi ebédmenü.</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Regős Vendéglő</h3>
+                <p class="text-sm text-gray-400">Tradicionális magyar ízek Budapest szívében 2002 óta.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Elérhetőség</h3>
+                <p class="text-sm text-gray-400 mb-2">Szófia u. 33, 1068 Budapest, Hungary</p>
+                <p class="text-sm text-gray-400 mb-2">+36 1 322 6480</p>
+                <p class="text-sm text-gray-400">info@regosvendeglo.hu</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Nyitvatartás</h3>
+                <p class="text-sm text-gray-400 mb-2">Hétfő - Vasárnap:</p>
+                <p class="text-sm text-gray-400">12:00–15:00, 18:00–22:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
